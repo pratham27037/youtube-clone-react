@@ -1,0 +1,37 @@
+.header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:20px;
+}
+
+.header__logo{
+    height: 25px;
+    /* object-fit:contain;  for png file if get distroted*/
+    object-fit: contain;
+    margin-left: 20px;
+}
+
+.header__mid{
+    display: flex;
+    align-items: center;
+    width:40%;
+    border: 1px solid lightgray;
+}
+
+.header__inputButton{
+    width:50px !important;
+    background-color: #fafafa;
+    border-left: 1px solid lightgray;
+    color:gray;
+}
+
+.header__right{
+    display:flex;
+    align-items: center;
+}
+
+.header__mid > input{
+    flex:1;
+    border:none;
+}

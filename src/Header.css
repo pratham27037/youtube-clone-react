@@ -3,6 +3,10 @@
     align-items: center;
     justify-content: space-between;
     padding:20px;
+    position: sticky;
+    top:0;
+    z-index: 100;/* it means that it will be lifted up and over the other element */
+    background-color: white;
 }
 
 .header__logo{
@@ -34,4 +38,8 @@
 .header__mid > input{
     flex:1;
     border:none;
+}
+
+.header__icon{
+    margin-right:8px;
 }

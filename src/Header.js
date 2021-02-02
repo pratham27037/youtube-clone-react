@@ -17,14 +17,14 @@ function Header(){
             </div>
 
             <div className="header__mid">
-            <input type="text" />
+            <input placeholder="Search" type="text" />
             <SearchIcon className="header__inputButton"/>
             </div>
 
             <div className="header__right">
-            <VideoCallIcon />
-            <AppsIcon />
-            <NotificationsIcon />
+            <VideoCallIcon className="header__icon"/>
+            <AppsIcon className="header__icon"/>
+            <NotificationsIcon className="header__icon"/>
             <Avatar alt="pratham-choudhary" src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/09/25/Pictures/_115e3b3a-df82-11e9-b0cd-667d8786d605.jpg"/>
             </div>
 

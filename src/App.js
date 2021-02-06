@@ -3,23 +3,36 @@ import './App.css';
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import RecomendedVideos from "./RecomendedVideos";
+import SearchPage from "./SearchPage";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  // Link
+} from "react-router-dom";
 
 function App() {
   return (
     <div className="app">
-      {/* <h1>lets build youtube clone</h1> */}
 
-      {/*Header -> <Header />*/}
-      <Header />
-
-      {/*Sidebar*/}
+    <Router>
+    <Header />
+      <Switch>
+      <Route path="/search/:searchTerm">
       <div className="app__page">
-      <Sidebar />
+          <Sidebar />
+          <SearchPage />
+        </div>
+        </Route>
+        <Route path="/">
+        <div className="app__page">
+            <Sidebar />
 
-      {/*Recomended video*/}
-      <RecomendedVideos />
-      </div>
-      
+            <RecomendedVideos />
+        </div>
+        </Route>
+      </Switch>
+    </Router>        
 
     </div>
   );
